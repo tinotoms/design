@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinoj Thomas — Graphic Designer &amp; Brand Systems</title>
+  <meta name="description" content="Portfolio of Tinoj Thomas — Graphic designer with an engineering background. Brand marks, packaging, and visual systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="hero">
+
+  <!-- Negative Solid Circle Custom Cursor (Requirements 9 & 10) -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <svg class="cursor-arrow-svg" id="cursor-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"></line>
+      <polyline points="7 7 17 7 17 17"></polyline>
+    </svg>
+  </div>
+
+  <!-- Top Reading Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Persistent Smart Top Header Navigation (Requirements 2 & 3) -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="nav-brand" id="nav-brand">Tinoj Thomas</a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-vertical-menu desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links-vertical">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button (Requirement 3) -->
+      <button type="button" class="nav-hamburger-btn mobile-only" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line line-1"></span>
+        <span class="hamburger-line line-2"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay (Requirement 3) -->
+  <div class="mobile-menu-overlay" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <ul class="mobile-nav-links">
+        <li><a href="#work" class="mobile-nav-link"><span class="mobile-nav-num">01</span> Work</a></li>
+        <li><a href="#experience" class="mobile-nav-link"><span class="mobile-nav-num">02</span> Experience</a></li>
+        <li><a href="#about" class="mobile-nav-link"><span class="mobile-nav-num">03</span> About</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><span class="mobile-nav-num">04</span> Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <span class="mobile-menu-email">tinojatwork@gmail.com</span>
+        <span class="mobile-menu-loc">Kerala, India</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section (Atmospheric Looping Video + Seamless Bottom Bleed) -->
+    <section class="hero-section" id="hero" data-section-theme="hero">
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video class="hero-video" autoplay loop muted playsinline poster="assets/videos/hero-poster.jpg">
+          <source src="assets/videos/hero-atmosphere.webm" type="video/webm">
+          <source src="assets/videos/hero-atmosphere.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      
+      <!-- Requirement 2: Deep bottom gradient fade blending Hero seamlessly into Work -->
+      <div class="hero-bottom-fade" aria-hidden="true"></div>
+
+      <!-- Monopo Rotating Typographic Badge -->
+      <div class="rotating-badge-wrap" aria-hidden="true">
+        <svg viewBox="0 0 160 160" class="rotating-badge-svg">
+          <defs>
+            <path id="circlePath" d="M 80, 80 m -55, 0 a 55,55 0 1,1 110,0 a 55,55 0 1,1 -110,0"></path>
+          </defs>
+          <text font-family="'Inter', sans-serif" font-size="9" font-weight="500" letter-spacing="2.8" fill="#9a9a9a">
+            <textPath href="#circlePath">
+              · SCROLL DOWN · TINOJ THOMAS · BRAND &amp; SYSTEMS
+            </textPath>
+          </text>
+        </svg>
+        <div class="rotating-badge-center">↓</div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-status-dot"></span>
+          <span class="hero-meta-label">Graphic Designer · Product Designer</span>
+        </div>
+        
+        <h1 class="hero-headline">
+          TINOJ THOMAS
+          <span class="whisper">BRAND &amp; SYSTEMS</span>
+        </h1>
+
+        <p class="hero-positioning">
+          Graphic designer with an engineering foundation. Crafting brand marks, packaging, and visual systems built to hold attention in the scroll and scale across real touchpoints.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="pill-btn pill-btn-dark">Explore Selected Work</a>
+          <a href="#contact" class="pill-btn pill-btn-dark">Get in Touch</a>
+        </div>
+
+        <div class="hero-footer-bar">
+          <span class="hero-scroll-cue">Scroll Down ↓</span>
+          <span class="hero-meta-label">Kerala, India · Open for Roles</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section: Staggered Two-Column Asymmetric Showcase (Desktop - 1 Reference) -->
+    <!-- Requirements: No filters, dark overlays, 3D interactive cards, natural varied heights -->
+    <section class="work-staggered-section" id="work" data-section-theme="work">
+      <div class="container">
+        <!-- Headline Block matching Desktop - 1 -->
+        <div class="work-headline-wrap">
+          <span class="section-context-label">01 / SELECTED WORK</span>
+          <h2 class="work-section-headline">Case studies & visual execution.</h2>
+        </div>
+
+        <!-- Staggered Two-Column Grid with Varied Card Heights -->
+        <div class="work-masonry-container" id="project-grid">
+          <div class="work-masonry-col" id="masonry-col-1">
+          <article class="project-card" data-id="night-wolf" data-category="illustration" tabindex="0" role="button" aria-label="Open case study for Night Wolf">
+            <div class="project-card-media-wrap card-ratio-portrait">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Night Wolf.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Night Wolf — Practice, not a brief." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Night Wolf</h3>
+              <span class="card-brief-sub">Practice, not a brief.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="revup" data-category="identity" tabindex="0" role="button" aria-label="Open case study for RevUp">
+            <div class="project-card-media-wrap card-ratio-compact">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Revup.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="RevUp — A tachometer that spells out a name." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">RevUp</h3>
+              <span class="card-brief-sub">A tachometer that spells out a name.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="frame-it" data-category="posters" tabindex="0" role="button" aria-label="Open case study for Frame It">
+            <div class="project-card-media-wrap card-ratio-portrait">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Frameit.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Frame It — Designed for exactly where it would live — a phone screen, mid-scroll." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Frame It</h3>
+              <span class="card-brief-sub">Designed for exactly where it would live — a phone screen, mid-scroll.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="transeduverse-promo" data-category="posters" tabindex="0" role="button" aria-label="Open case study for TransEduverse — Course Promo">
+            <div class="project-card-media-wrap card-ratio-flyer">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Transeduverse_Poster_malayalam.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="TransEduverse — Course Promo — Same brand, warmer read." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">TransEduverse — Course Promo</h3>
+              <span class="card-brief-sub">Same brand, warmer read.</span>
+            </div>
+          </article>
+          </div>
+          <div class="work-masonry-col" id="masonry-col-2">
+          <article class="project-card" data-id="mountain" data-category="illustration" tabindex="0" role="button" aria-label="Open case study for Mountain">
+            <div class="project-card-media-wrap card-ratio-landscape">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Mountain.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Mountain — Same technique, wider canvas." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Mountain</h3>
+              <span class="card-brief-sub">Same technique, wider canvas.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="nuclex" data-category="identity" tabindex="0" role="button" aria-label="Open case study for NucleX">
+            <div class="project-card-media-wrap card-ratio-square">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/NucleX.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="NucleX — One mark, every platform." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">NucleX</h3>
+              <span class="card-brief-sub">One mark, every platform.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="scoopso" data-category="posters" tabindex="0" role="button" aria-label="Open case study for Scoopso">
+            <div class="project-card-media-wrap card-ratio-flyer">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Scoopso.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Scoopso — Telling a new town what kind of shop just opened." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Scoopso</h3>
+              <span class="card-brief-sub">Telling a new town what kind of shop just opened.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="tech-revealer" data-category="digital-art" tabindex="0" role="button" aria-label="Open case study for Tech Revealer">
+            <div class="project-card-media-wrap card-ratio-banner">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Tech-Revealer-Channel-Art.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Tech Revealer — Background noise, on purpose." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Tech Revealer</h3>
+              <span class="card-brief-sub">Background noise, on purpose.</span>
+            </div>
+          </article>
+          </div>
+          <div class="work-masonry-col" id="masonry-col-3">
+          <article class="project-card" data-id="oak-street" data-category="identity" tabindex="0" role="button" aria-label="Open case study for Oak Street">
+            <div class="project-card-media-wrap card-ratio-square">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <span class="gallery-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="0"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 2 Images</span>
+              <img src="assets/images/Oakstreet_Logo New.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Oak Street — A tree that had to stay a tree." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Oak Street</h3>
+              <span class="card-brief-sub">A tree that had to stay a tree.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="everite" data-category="packaging" tabindex="0" role="button" aria-label="Open case study for Everite Power">
+            <div class="project-card-media-wrap card-ratio-banner">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <span class="gallery-badge"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="0"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 4 Images</span>
+              <img src="assets/images/Everite_Box.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Everite Power — Fitting a spec sheet onto a battery box without it looking like one." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Everite Power</h3>
+              <span class="card-brief-sub">Fitting a spec sheet onto a battery box without it looking like one.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="transeduverse-ai" data-category="posters" tabindex="0" role="button" aria-label="Open case study for TransEduverse — AI Internship">
+            <div class="project-card-media-wrap card-ratio-flyer">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/Transeduverse_Poster_AI_internship.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="TransEduverse — AI Internship — One flyer, two brand colors, no exceptions." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">TransEduverse — AI Internship</h3>
+              <span class="card-brief-sub">One flyer, two brand colors, no exceptions.</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-id="merry-christmas" data-category="digital-art" tabindex="0" role="button" aria-label="Open case study for Merry Christmas">
+            <div class="project-card-media-wrap card-ratio-supertall">
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              <img src="assets/images/MerryChristmas.png" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" alt="Merry Christmas — Prompting as a design tool, not a shortcut." loading="lazy">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Merry Christmas</h3>
+              <span class="card-brief-sub">Prompting as a design tool, not a shortcut.</span>
+            </div>
+          </article>
+
+          <!-- Re-added: was silently missing from this build. No image exists yet — placeholder until Circuitnova.jpg is added. -->
+          <article class="project-card" data-id="circuit-nova" data-category="posters" tabindex="0" role="button" aria-label="Open case study for Circuit Nova">
+            <div class="project-card-media-wrap card-ratio-flyer">
+              <span class="card-dark-overlay"></span>
+              <img src="assets/images/circuitnova.png">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">Circuit Nova</h3>
+              <div class="card-dark-overlay" aria-hidden="true"></div>
+              
+            </div>
+          </article>
+
+          <!-- Re-added: was silently missing from this build. No image exists at all yet for this one. -->
+          <article class="project-card" data-id="ekites-story" data-category="posters" tabindex="0" role="button" aria-label="Open case study for e-KITES 2.0">
+            <div class="project-card-media-wrap card-ratio-flyer">
+              <span class="card-dark-overlay"></span>
+              <img src="assets/images/e-kites.png">
+            </div>
+            <div class="project-card-info">
+              <h3 class="card-title">e-KITES 2.0</h3>
+              <span class="card-brief-sub">Loud on purpose, for a format built to be skipped.</span>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (Smooth Accordion Toggle - Requirement 6) -->
+    <section class="experience-section" id="experience" data-section-theme="experience">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-context-label">02 / Experience</span>
+            <h2 class="section-title-whisper">Leadership &amp; Direction</h2>
+          </div>
+          
+        </div>
+
+        <div class="experience-list">
+          <!-- Exp 1 -->
+          <div class="exp-item open">
+            <button type="button" class="exp-summary-btn" aria-expanded="true">
+              <div class="exp-main-col">
+                <h3 class="exp-role">Head of Media</h3>
+                <span class="exp-org">IEEE VTS Kerala Chapter · Remote</span>
+              </div>
+              <div class="exp-side-col">
+                <span class="exp-date">Jan 2025 – Mar 2026</span>
+                <span class="exp-toggle-icon">+</span>
+              </div>
+            </button>
+            <div class="exp-body-collapse">
+              <div class="exp-body-inner">
+                <p>Lead the visual communication efforts supporting the chapter's outreach, branding, and event promotion — creative direction across every touchpoint the chapter puts out.</p>
+                <div class="exp-skills-tags">
+                  <span class="pill-tag pill-tag-dark">Promotional Campaigns</span>
+                  <span class="pill-tag pill-tag-dark">Mentorship</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 2 -->
+          <div class="exp-item">
+            <button type="button" class="exp-summary-btn" aria-expanded="false">
+              <div class="exp-main-col">
+                <h3 class="exp-role">Design Lead</h3>
+                <span class="exp-org">IEEE SB NSSCE · Palakkad, Kerala</span>
+              </div>
+              <div class="exp-side-col">
+                <span class="exp-date">Jan 2025 – Feb 2026</span>
+                <span class="exp-toggle-icon">+</span>
+              </div>
+            </button>
+            <div class="exp-body-collapse">
+              <div class="exp-body-inner">
+                <p>Oversee the entire visual design strategy for the student branch — a key role in how the organization communicates, engages, and builds its identity among students.</p>
+                <div class="exp-skills-tags">
+                  <span class="pill-tag pill-tag-dark">Design Systems</span>
+                  <span class="pill-tag pill-tag-dark">Team Leadership</span>
+                  <span class="pill-tag pill-tag-dark">Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 3 -->
+          <div class="exp-item">
+            <button type="button" class="exp-summary-btn" aria-expanded="false">
+              <div class="exp-main-col">
+                <h3 class="exp-role">Head of Media</h3>
+                <span class="exp-org">IEEE SB NSSCE · Palakkad, Kerala</span>
+              </div>
+              <div class="exp-side-col">
+                <span class="exp-date">Jan 2024 – Jan 2025</span>
+                <span class="exp-toggle-icon">+</span>
+              </div>
+            </button>
+            <div class="exp-body-collapse">
+              <div class="exp-body-inner">
+                <p>Designed promotional materials, posters, and event creatives. Managed IEEE SB's social media presence and engagement, including short-form video content for reels and stories.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 4 -->
+          <div class="exp-item">
+            <button type="button" class="exp-summary-btn" aria-expanded="false">
+              <div class="exp-main-col">
+                <h3 class="exp-role">Designer</h3>
+                <span class="exp-org">IEEE Education Society Kerala Chapter · Remote</span>
+              </div>
+              <div class="exp-side-col">
+                <span class="exp-date">Feb 2024 – Jan 2025</span>
+                <span class="exp-toggle-icon">+</span>
+              </div>
+            </button>
+            <div class="exp-body-collapse">
+              <div class="exp-body-inner">
+                <p>Designed promotional materials for the ProTalks Series and other IEEE events. Created posters, flyers, and social media graphics.</p>
+                <div class="exp-skills-tags">
+                  <span class="pill-tag pill-tag-dark">Teamwork</span>
+                  <span class="pill-tag pill-tag-dark">Hosting Events</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 5 -->
+          <div class="exp-item">
+            <button type="button" class="exp-summary-btn" aria-expanded="false">
+              <div class="exp-main-col">
+                <h3 class="exp-role">Graphic Designer</h3>
+                <span class="exp-org">Oak Street Event Company · Remote</span>
+              </div>
+              <div class="exp-side-col">
+                <span class="exp-date">Jul 2020 – Jul 2022</span>
+                <span class="exp-toggle-icon">+</span>
+              </div>
+            </button>
+            <div class="exp-body-collapse">
+              <div class="exp-body-inner">
+                <p>Produced graphic design and video editing work for an event management company, covering promotional and on-site event materials — including basic motion graphics and video edits for social and event promos.</p>
+                <div class="exp-skills-tags">
+                  <span class="pill-tag pill-tag-dark">Event Planning</span>
+                  <span class="pill-tag pill-tag-dark">Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Inverted Contrast on Scroll - Requirements 1, 4 & 7) -->
+    <section class="about-section" id="about" data-section-theme="about">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-context-label">03 / About</span>
+            <h2 class="section-title-whisper">Engineering discipline. Design intuition.</h2>
+          </div>
+          <span class="section-context-label">Background</span>
+        </div>
+
+        <div class="about-grid">
+          <div>
+            <p class="about-statement">
+              I treat brand identity as a <strong>functional system</strong>, not just decoration.
+            </p>
+            <div class="about-narrative">
+              <p>With a degree in Electronics &amp; Communication Engineering from NSS College of Engineering, I approach branding with structural rigor: respecting constraints, prioritizing information hierarchy, and solving the real communication brief.</p>
+              <p>Four years of leading design initiatives across IEEE chapters and freelance clients taught me how to deliver polished, production-ready work on fast-paced timelines. Currently open to <strong>Junior Brand Designer</strong> roles in Kochi and remote teams.</p>
+            </div>
+          </div>
+
+          <div class="about-capabilities">
+            <div>
+              <h4 class="caps-group-title">Core Disciplines</h4>
+              <ul class="caps-list" style="margin-top: 12px;">
+                <li>Brand Marks &amp; Identity Rework</li>
+                <li>Product Packaging &amp; Die-Lines</li>
+                <li>Event &amp; Campaign Posters</li>
+                <li>Visual Systems &amp; Guidelines</li>
+              </ul>
+            </div>
+
+            <div style="margin-top: 16px;">
+              <h4 class="caps-group-title">Tools</h4>
+              <ul class="caps-list" style="margin-top: 12px;">
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe After Effects</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section (Requirement 1: Turns black ONLY when previous section is out of view) -->
+    <section class="contact-section" id="contact" data-section-theme="contact">
+      <div class="container contact-wrap">
+        <div>
+          <span class="section-context-label" style="color: var(--color-felt-gray);">04 / Contact</span>
+          <h2 class="contact-hero-text">
+            LET'S TALK BRAND.
+            <span class="whisper">Open for agency roles &amp; select freelance commissions.</span>
+          </h2>
+        </div>
+
+        <div class="contact-channels">
+          <a href="mailto:tinojatwork@gmail.com" class="contact-direct-email">tinojatwork@gmail.com</a>
+          <button type="button" class="pill-btn pill-btn-dark" id="copy-email-btn" aria-label="Copy email address to clipboard">Copy Email</button>
+        </div>
+
+        <div class="contact-social-row">
+          <div class="social-link-item">
+            <span class="social-label">Instagram</span>
+            <a href="https://instagram.com/bytinotoms" target="_blank" rel="noopener noreferrer" class="social-value">@bytinotoms</a>
+          </div>
+          <div class="social-link-item">
+            <span class="social-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/tinojthomas" target="_blank" rel="noopener noreferrer" class="social-value">linkedin.com/in/tinojthomas</a>
+          </div>
+          <div class="social-link-item">
+            <span class="social-label">Location</span>
+            <span class="social-value" style="color: var(--color-ash-mist);">Kerala, India</span>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <span>&copy; 2026 Tinoj Thomas · Built with editorial discipline.</span>
+          <span>Deployed on GitHub Pages</span>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- POP-UP MODAL CARD & COMPARATIVE GALLERY SYSTEM -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card" id="modal-card">
+      <!-- Modal Top Bar -->
+      <div class="modal-bar">
+        <span class="modal-tracker" id="modal-tracker">PROJECT 01 OF 12</span>
+        <div class="modal-controls">
+          <button type="button" class="modal-nav-btn" id="modal-prev-btn" aria-label="Previous project">← Prev</button>
+          <button type="button" class="modal-nav-btn" id="modal-next-btn" aria-label="Next project">Next →</button>
+          <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close case study">✕ Close</button>
+        </div>
+      </div>
+
+      <!-- Side-by-Side Content Split: Left Image, Right Text (Requirement 2) -->
+      <div class="modal-content-split">
+        <!-- Left: Image Viewer & Gallery Controls -->
+        <div class="modal-media-section">
+          <div class="modal-media-viewer" id="modal-media-viewer">
+            <button type="button" class="gallery-arrow-btn gallery-arrow-left" id="gallery-arrow-prev" aria-label="Previous image" style="display: none;">‹</button>
+            <img id="modal-img" src="" alt="" loading="lazy">
+            <button type="button" class="gallery-arrow-btn gallery-arrow-right" id="gallery-arrow-next" aria-label="Next image" style="display: none;">›</button>
+          </div>
+          <div class="modal-image-caption">
+            <span id="modal-img-label">IMAGE TITLE</span>
+            <span id="modal-img-counter">1 / 1</span>
+          </div>
+        </div>
+
+        <!-- Right: Case Study Content -->
+        <div class="modal-body">
+          <div class="modal-meta-row">
+            <span class="pill-tag pill-tag-dark" id="modal-category">CATEGORY</span>
+            <div id="modal-tags" style="display: flex; gap: 8px; flex-wrap: wrap;"></div>
+          </div>
+
+          <div class="modal-title-wrap">
+            <h2 class="modal-title" id="modal-title">Project Title</h2>
+            <p class="modal-hook" id="modal-hook">Project Hook line</p>
+          </div>
+
+          <div class="modal-case-grid">
+            <div class="modal-case-block">
+              <span class="modal-case-label">The Brief</span>
+              <p class="modal-case-text" id="modal-brief">Project Brief description...</p>
+            </div>
+            <div class="modal-case-block">
+              <span class="modal-case-label">The Decision</span>
+              <p class="modal-case-text" id="modal-decision">The key design decision that mattered...</p>
+            </div>
+          </div>
+
+          <div class="modal-disclosure-box" id="modal-disclosure" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
