@@ -155,16 +155,16 @@ const PROJECTS = [
     "coverFallback": "assets/images/placeholder.svg",
     "images": [
       {
-        "src": "assets/images/reference/Everite_battery_old.png",
-        "fallback": "assets/images/placeholder.svg",
-        "label": "Original Label (Before)",
-        "caption": "The legacy EPT 100 label before the redesign"
-      },
-      {
         "src": "assets/images/reference/Everite_battery_new.png",
         "fallback": "assets/images/placeholder.svg",
         "label": "New Label (After)",
         "caption": "EPT 100 battery label carrying the redesigned typography and warranty seal"
+      },
+      {
+        "src": "assets/images/reference/Everite_battery_old.png",
+        "fallback": "assets/images/placeholder.svg",
+        "label": "Original Label (Before)",
+        "caption": "The legacy EPT 100 label before the redesign"
       },
       {
         "src": "assets/images/reference/Everite_battery_box.png",
